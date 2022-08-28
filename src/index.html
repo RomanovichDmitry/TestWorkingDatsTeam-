@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body class="registration">
+    <header class="registration__header">
+        <a href="" class="registration__logo registration__logo-mob">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+        <a href="" class="registration__logo registration__logo-desc">
+            <img src="assets/images/desc-logo.png" alt="">
+        </a>
+    </header>
+    <main class="registration__main">
+        <div class="registration__players-block registration__players-block-mob">
+            <img class="registration__players" src="assets/images/players.png" alt="">
+        </div>
+        <div class="registration__players-block registration__players-block-desc">
+            <img class="registration__players" src="assets/images/desc-players.png" alt="">
+        </div>
+        <div class="registration__reg-block">
+            <div class="container">
+                <div class="registration__window">
+                    <h1 class="registration__title">
+                <span class="registration__title--big-size">
+                    <b>3 000</b> MAD <br>
+                </span>
+                        + 250 tours gratuits
+                    </h1>
+                    <p class="registration__description">
+                        Bonus lors du premier dépôt
+                    </p>
+                    <div class="registration__buttons-block">
+                        <button class="registration__btn-swap registration__btn-swap--active mail-reg">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7242 9.88508H1.6694C0.747335 9.88508 0 9.13867 0 8.21774V1.66734C0 0.746966 0.747335 0 1.6694 0H10.7242C11.6463 0 12.3936 0.746966 12.3936 1.66734V8.21774C12.3936 9.13867 11.6463 9.88508 10.7242 9.88508ZM1.79794 8.76963H10.5962C11.1238 8.76963 11.1527 8.40059 11.1527 8.21385V2.23923L7.50896 5.62615C6.77721 6.35644 5.58971 6.35644 4.8574 5.62615L1.24148 2.51156V8.21385C1.24148 8.40059 1.49077 8.76963 1.79794 8.76963ZM10.1455 1.23605H2.22086L5.74162 4.74524C5.98536 4.98867 6.381 4.98867 6.62529 4.74524L10.1455 1.23605Z" fill="white"/>
+                            </svg>
+                            <p>
+                                Адреси почтаи
+                                электронӣ
+                            </p>
+                        </button>
+                        <button class="registration__btn-swap tel-reg">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.48 12.714H1.904C0.795333 12.714 0 11.8599 0 10.8069V1.9071C0 0.85345 0.795333 0 1.904 0H9.48C10.3727 0 11.5533 0.85345 11.5533 1.9071V10.8069C11.5533 11.8599 10.3727 12.714 9.48 12.714ZM10.1733 2.22495C10.1733 1.6978 9.484 1.2714 8.93 1.2714H2.23867C1.68467 1.2714 1.23533 1.6978 1.23533 2.22495V10.489C1.23533 11.0155 1.68467 11.4426 2.23867 11.4426H8.93C9.484 11.4426 10.1733 11.0155 10.1733 10.489V2.22495ZM5.584 10.8069C5.03 10.8069 4.64667 10.3798 4.64667 9.85335C4.64667 9.32685 5.03 8.8998 5.584 8.8998C6.13867 8.8998 6.72 9.32685 6.72 9.85335C6.72 10.3798 6.13867 10.8069 5.584 10.8069Z" fill="white"/>
+                            </svg>
+                            <p>Рақами телефон</p>
+                        </button>
+                    </div>
+                    <div class="registration__form-block">
+                        <form action="" method="post" class="registration__form-mail">
+                            <input class="registration__form-input registration__form-input-email" required type="email" name="for-mail" id="for-mail" placeholder="Email">
+                            <input class="registration__form-input registration__form-input-pass" required type="password" name="for-password" id="for-password" placeholder="Парол">
+                            <div class="registration__form-checkbox">
+                                <input required class="registration__form-check" type="checkbox" name="for-confidential" id="for-confidential">
+                                <label for="for-confidential" class="checkbox-style">
+                                    <span class="registration__checkbox"></span>
+                                </label>
+                                <label for="for-confidential">Тасдиқ менамоям, ки синни ман аз
+                                    18 сола боло буда, шартҳои истифодаи сайтро қабул мекунам</label>
+                            </div>
+                            <button class="registration__form-submit" type="submit">S'inscrire</button>
+                        </form>
+                        <form action="" method="post" class="registration__form-tel">
+                            <input class="registration__form-input registration__form-input-tel" required type="tel" name="tel" id="tel" required  placeholder="+7(***)***-**-**">
+                            <input class="registration__form-input registration__form-input-pass" required type="password" name="password" id="password" placeholder="Парол">
+                            <div class="registration__form-checkbox">
+                                <input required class="registration__form-check" type="checkbox" name="confidential" id="confidential">
+                                <label for="confidential" class="checkbox-style">
+                                    <span class="registration__checkbox"></span>
+                                </label>
+                                <label for="confidential">Тасдиқ менамоям, ки синни ман аз
+                                    18 сола боло буда, шартҳои истифодаи сайтро қабул мекунам</label>
+                            </div>
+                            <button class="registration__form-submit" type="submit">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

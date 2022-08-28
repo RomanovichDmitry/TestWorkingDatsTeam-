@@ -1,0 +1,260 @@
+.registration {
+  background-image: url(/public/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #0D2B4A;
+
+  &__logo-desc {
+    display: none;
+  }
+  &__players-block-desc {
+    display: none;
+  }
+  &__header {
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__players-block {
+    text-align: center;
+  }
+  &__players {
+    width: 100%;
+    max-width: 340px;
+  }
+  &__window {
+    background-color: #052547;
+    border: 1px solid #082B60;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: -40px;
+    margin-bottom: 45px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px -10px black;
+    max-width: 340px;
+  }
+  &__title {
+    padding: 14px 27px 6px 27px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+            -0   -1px 0   #000000,
+            0   -1px 0   #000000,
+            -0    1px 0   #000000,
+            0    1px 0   #000000,
+            -1px -0   0   #000000,
+            1px -0   0   #000000,
+            -1px  0   0   #000000,
+            1px  0   0   #000000,
+            -1px -1px 0   #000000,
+            1px -1px 0   #000000,
+            -1px  1px 0   #000000,
+            1px  1px 0   #000000,
+            -1px -1px 0   #000000,
+            1px -1px 0   #000000,
+            -1px  1px 0   #000000,
+            1px  1px 0   #000000,
+            0px 3px 6px black;
+  }
+  &__title--big-size {
+    color: #FFDB1C;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 45px;
+    b {
+      font-size: 64px;
+    }
+  }
+  &__description {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  &__btn-swap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #052547;
+    svg {
+      margin-right: 5px;
+      width: 13px;
+    }
+  }
+  &__buttons-block {
+    display: flex;
+    background: linear-gradient(0deg, rgba(13,50,113,1) 50%, rgba(5,37,71,1) 51%);
+  }
+  &__btn-swap--active {
+    background-color: rgba(13,50,113,1) !important;
+  }
+  .mail-reg {
+    border-radius:20px 20px 20px 0px;
+  }
+  .tel-reg {
+    border-radius:20px 20px 0px 20px;
+    background-color: #052547;
+  }
+  &__form-block {
+    background-color: #082B60;
+  }
+  &__form-mail,
+  &__form-tel{
+    padding: 33px 18px;
+    background: linear-gradient(0deg, rgba(8,43,96,1) 0%, rgba(13,50,113,1) 100%);
+
+    .registration__form-input {
+      width: 100%;
+      padding: 22px 10px 22px 29px;
+      background-color: inherit;
+      border-radius: 30px;
+      border:2px solid #164B9A;
+      margin-bottom: 25px;
+      color: #fff;
+      &::placeholder {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  &__form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    label {
+      color: white;
+      font-size: 12px;
+      margin-top: -5px;
+    }
+  }
+  &__checkbox {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #164B9A;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  &__form-check:checked ~ .checkbox-style .registration__checkbox {
+    background: url(/public/images/check.png), linear-gradient(0deg, rgba(0,86,226,1) 0%, rgba(31,146,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__form-check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__form-check {
+    transform: scale(1.5);
+    margin-right: 7px;
+  }
+  &__form-submit {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(0deg, rgba(255,94,0,1) 0%, rgba(255,63,0,1) 100%);
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 30px;
+    box-shadow: 0px 2px 25px -5px #ff4e01;
+  }
+  &__form-tel {
+    display: none;
+  }
+  @media (min-width: $tablet) {
+    background-image: url(/public/images/desc-bg.png);
+    background-size: cover;
+    &__logo-mob {
+      display: none;
+    }
+    &__logo-desc {
+      display: block;
+      margin-bottom: 50px;
+    }
+    &__header {
+      padding-top: 70px;
+    }
+    &__players-block-mob {
+       display: none;
+    }
+    &__players-block-desc {
+      display: block;
+      order: 1;
+      margin-right: 5%;
+      width: 50%;
+    }
+    &__players {
+      max-width: none;
+    }
+    &__main {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__window {
+      margin-top: 0;
+      margin-bottom: 0;
+      max-width: 520px;
+      border: 2px solid #082B60;
+    }
+    &__reg-block {
+      margin-right: -60px;
+      z-index: 2;
+    }
+    &__title--big-size {
+      b {
+        font-size: 100px;
+      }
+    }
+    &__title--big-size {
+      font-size: 38px;
+    }
+    &__title {
+      font-size: 38px;
+      text-shadow: none;
+    }
+    &__description {
+      font-size: 22px;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    &__btn-swap{
+      font-size: 17px;
+      padding: 17px 10px;
+    }
+    &__form-input {
+      font-size: 15px;
+    }
+    &__form-checkbox label {
+      font-size: 15px;
+    }
+    &__form-submit {
+      font-size: 30px;
+    }
+    &__form-mail,
+    &__form-tel{
+      padding: 44px 44px 32px 44px;
+    }
+    &__form-checkbox {
+      margin-bottom: 23px;
+    }
+    &__form-submit {
+      padding: 20px 0px;
+      border-radius: 50px;
+    }
+  }
+}
